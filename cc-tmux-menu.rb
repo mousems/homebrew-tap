@@ -11,7 +11,7 @@ class CcTmuxMenu < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.1.0/cc-tmux-menu_darwin_amd64.tar.gz"
-      sha256 "f399dbf6fa61b403d29818682135402dcff498ee6471802b0568c3be78689c52"
+      sha256 "ef2476e1383a45a156f33dc30d8fa949809fb587825074d4758c72a1c15d7536"
 
       define_method(:install) do
         bin.install "cc-tmux-menu"
@@ -19,7 +19,7 @@ class CcTmuxMenu < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.1.0/cc-tmux-menu_darwin_arm64.tar.gz"
-      sha256 "61625644bb3e10381ed278059144f6adc091bdfba5ce3e44825f9413ea63f442"
+      sha256 "81f8e7de34604819f1b57f56860c1ed3c9e5b7681905d028be112b1494cb476a"
 
       define_method(:install) do
         bin.install "cc-tmux-menu"
@@ -30,14 +30,14 @@ class CcTmuxMenu < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.1.0/cc-tmux-menu_linux_amd64.tar.gz"
-      sha256 "5f6bf131a9f32ae73ae3797a3aa00707f33d402a8381878bd83e435f2a9a4973"
+      sha256 "f9bb97338d5ef85227ad4dedf018e368c70ae83ce9df525f8c4aae489cf61439"
       define_method(:install) do
         bin.install "cc-tmux-menu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.1.0/cc-tmux-menu_linux_arm64.tar.gz"
-      sha256 "977b4a9ea4761b129f2a8cc0b21123d59056ed1c439f2ea27e33ab4d22f86e65"
+      sha256 "d091f6115fbbd8a8ff4ebe967b33781cb30312c4e87613be244c30993fba5407"
       define_method(:install) do
         bin.install "cc-tmux-menu"
       end
