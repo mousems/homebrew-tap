@@ -5,21 +5,21 @@
 class CcTmuxMenu < Formula
   desc "Interactive tmux session manager with AI-powered previews for Claude Code"
   homepage "https://github.com/mousems/cc-tmux-menu"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.1.0/cc-tmux-menu_darwin_amd64.tar.gz"
-      sha256 "ef2476e1383a45a156f33dc30d8fa949809fb587825074d4758c72a1c15d7536"
+      url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.2.0/cc-tmux-menu_darwin_amd64.tar.gz"
+      sha256 "8b4f513fb334517ba9bb0cb235d4efa5c3e0bc21f7030b5fd45b1e04b3a572f0"
 
       define_method(:install) do
         bin.install "cc-tmux-menu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.1.0/cc-tmux-menu_darwin_arm64.tar.gz"
-      sha256 "81f8e7de34604819f1b57f56860c1ed3c9e5b7681905d028be112b1494cb476a"
+      url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.2.0/cc-tmux-menu_darwin_arm64.tar.gz"
+      sha256 "0e2ba0111eb10a7addecf2a6ea52f1251d51c26d4a5ebea907343c37f8ee8d74"
 
       define_method(:install) do
         bin.install "cc-tmux-menu"
@@ -29,15 +29,15 @@ class CcTmuxMenu < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.1.0/cc-tmux-menu_linux_amd64.tar.gz"
-      sha256 "f9bb97338d5ef85227ad4dedf018e368c70ae83ce9df525f8c4aae489cf61439"
+      url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.2.0/cc-tmux-menu_linux_amd64.tar.gz"
+      sha256 "1c57ee6bf5f1ee00f9d0d7f3fab6ce5eb8259b55ffc3bfda591e3d207dbda9d1"
       define_method(:install) do
         bin.install "cc-tmux-menu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.1.0/cc-tmux-menu_linux_arm64.tar.gz"
-      sha256 "d091f6115fbbd8a8ff4ebe967b33781cb30312c4e87613be244c30993fba5407"
+      url "https://github.com/mousems/cc-tmux-menu/releases/download/v0.2.0/cc-tmux-menu_linux_arm64.tar.gz"
+      sha256 "b37b654fdab80627a2f42e03da41a0b9054fb739a9dac86686fdfa3a105b512e"
       define_method(:install) do
         bin.install "cc-tmux-menu"
       end
